@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
 :root {
   --font-family: "Rubik", sans-serif;
   --second-family: "Inter", sans-serif;
@@ -30,11 +38,13 @@
 
 .nav-left {
   display: flex;
+  align-items: center;
 }
 .nav-left-burger {
   margin-left: 288px;
   width: 25px;
   height: 16px;
+  cursor: pointer;
 }
 .nav-left-burger-line {
   width: 25px;
@@ -44,6 +54,13 @@
 }
 .nav-left-list {
   display: flex;
+  transform: translateX(-200%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.nav-left-list.show {
+  transform: translateX(0);
+  opacity: 1;
 }
 .nav-left-list-iten {
   margin-left: 30px;
