@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Rubik:wght@300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <div class="page-wrapper">
-        <div class="header-wrapper">
+        <header class="header">
+            <div class="header-wrapper">
             <nav class="nav">
                 <div class="nav-left">
+                    
                     <div class="nav-left-burger">
                         <div class="nav-left-burger-line"></div>
                         <div class="nav-left-burger-line"></div>
                         <div class="nav-left-burger-line"></div>
                     </div>
                     <ul class="nav-left-list">
-                        <li class="nav-left-list-iten">editions      </li>
+                        <li class="nav-left-list-iten nav-left-list-iten-pur">editions</li>
                         <li class="nav-left-list-iten">controller</li>
                         <li class="nav-left-list-iten">ABOUT GAME</li>
                         <li class="nav-left-list-iten">Explore</li>
@@ -25,16 +30,23 @@
                         <li class="nav-left-list-iten">FAQ</li>
                     </ul>
                 </div>
+                
             </nav>
-            <h1 class="header-title">God of War Ragnarök</h1>
-            <p class="header-desc">Taking place three years following the events of the previous game, Fimbulwinter, a great winter that spans three summers, is drawing to a close which will begin the prophesied Ragnarök.</p>
-            <button class="header-buy main-button">buy NOW</button>
+
         </div>
-        <div class="editiond-wrapper">
+        </header>
+        
+        <main>
+            <section class="hero">
+                <h1 class="hero-title">God of War Ragnarök</h1>
+                <p class="hero-desc">Taking place three years following the events of the previous game, Fimbulwinter, a great winter that spans three summers, is drawing to a close which will begin the prophesied Ragnarök.</p>
+                <button class="hero-buy main-button">buy NOW</button>
+            </section>
+            <div class="editions-wrapper">
             <h3 class="editions-title main-title">Editions</h3>
-            <div class="editiond-card">
+            <div class="editions-card">
                 <div class="editions-card-item">
-                    <img src="" alt="" class="editions-card-item-poster">
+                    <img src="/img/stan-edit.png" alt="" class="editions-card-item-poster">
                     <h5 class="editions-card-item-title">Standard Edition</h5>
                     <h6 class="editions-card-item-subtitle">PS5</h6>
                     <p class="editions-card-item-settings">Offline play enabled</p>
@@ -44,27 +56,28 @@
                     <button class="editions-card-item-buy main-button">buy NOW</button>
                 </div>
                 <div class="editions-card-item">
-                    <img src="" alt="" class="editions-card-item-poster">
+                    <img src="/img/stan-edit.png" alt="" class="editions-card-item-poster">
                     <h5 class="editions-card-item-title">Standard Edition</h5>
-                    <h6 class="editions-card-item-subtitle">PS5</h6>
+                    <h6 class="editions-card-item-subtitle">PS4</h6>
                     <p class="editions-card-item-settings">Offline play enabled</p>
                     <p class="editions-card-item-settings">Remote Play supported</p>
                     <p class="editions-card-item-settings">Trigger effect required</p>
-                    <p class="editions-card-item-price">19.99$</p>
+                    <p class="editions-card-item-price">18.99$</p>
                     <button class="editions-card-item-buy main-button">buy NOW</button>
                 </div>
                 <div class="editions-card-item">
-                    <img src="" alt="" class="editions-card-item-poster">
+                    <img src="/img/dig-edit.png" alt="" class="editions-card-item-poster">
                     <h5 class="editions-card-item-title">Standard Edition</h5>
                     <h6 class="editions-card-item-subtitle">PS5</h6>
-                    <p class="editions-card-item-settings">Offline play enabled</p>
-                    <p class="editions-card-item-settings">Remote Play supported</p>
-                    <p class="editions-card-item-settings">Trigger effect required</p>
-                    <p class="editions-card-item-price">19.99$</p>
+                    <p class="editions-card-item-settings">All features of Standard Edition</p>
+                    <p class="editions-card-item-settings">Darkdale Armour</p>
+                    <p class="editions-card-item-settings">Official digital soundtrack</p>
+                    <p class="editions-card-item-price">29.99$</p>
                     <button class="editions-card-item-buy main-button">buy NOW</button>
                 </div>
             </div>
         </div>
+        
         <div class="DualSense-wrapper">
             <h3 class="DualSense-title main-title">DualSense</h3>
             <div class="DualSense-container">
@@ -77,18 +90,20 @@
                     <button class="DualSense-container-left-buy-btn main-button">buy dualsense with a game</button>
                 </div>
                 </div>
-                <siv class="DualSense-container-right">
-                    <img src="" alt="" class="DualSense-container-right-img">
-                </siv>
+                <div class="DualSense-container-right">
+                    <img src="/img/DualSense.png" alt="" class="DualSense-container-right-img">
+                </div>
             </div>
         </div>
+        <!-- hhhhh -->
         <div class="about-wrapper">
             <h3 class="about-title main-title">About Game</h3>
             <div class="about-conatiner">
                 <h2 class="about-conatiner-title">Watch the Trailer</h2>
-                <button class="about-container-play">play</button>
+                <button class="about-container-play main-button">play</button>
             </div>
         </div>
+        <!-- hhhhh -->
         <div class="explore-wrapper">
             <h3 class="explore-title main-title">Explore the God of War series</h3>
             <div class="explore-card">
@@ -130,14 +145,12 @@
                 <div class="explore-card-container">
                     <img src="" alt="" class="explore-card-container-poster">
                     <ul class="explore-card-container-settings">
-                        <li class="explore-card-container-settings-item">CPU: <span class="PS">Intel i5-2500k (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)</span></li>
-                        <li class="explore-card-container-settings-item">RAM: <span class="PS">8 GB</span></li>
-                        <li class="explore-card-container-settings-item">OS: <span class="PS">Windows 10 64-bit</span></li>
-                        <li class="explore-card-container-settings-item">VIDEOCARD: <span class="PS">NVIDIA GTX 960 (4 GB) or AMD R9 290X (4 GB)</span></li>
-                        <li class="explore-card-container-settings-item">PIXEL SHADER: <span class="PS">5.1</span></li>
-                        <li class="explore-card-container-settings-item">VERTEX SHADER: <span class="PS">5.1</span></li>
-                        <li class="explore-card-container-settings-item">FREE DISK SPACE: <span class="PS">70 GB</span></li>
-                        <li class="explore-card-container-settings-item">DEDICATED VIDEO RAM: <span class="PS">4 GB</span></li>
+                        <li class="explore-card-container-settings-item">Platform: <span class="PS">PS4</span></li>
+                        <li class="explore-card-container-settings-item">Premiere: <span class="PS">20.4.2018</span></li>
+                        <li class="explore-card-container-settings-item">Publisher: <span class="PS">Sony Interactive Entertainment Europe</span></li>
+                        <li class="explore-card-container-settings-item">Species: <span class="PS">Action, Adventure</span></li>
+                        <li class="explore-card-container-settings-item">Voice: <span class="PS">English, Polish, Russian</span></li>
+                        <li class="explore-card-container-settings-item">Display languages: <span class="PS">English, Dutch, Polish, Russian,</span></li>
                         <button class="explore-card-container-settings-buy"></button>
                     </ul>
                 </div>
@@ -145,6 +158,8 @@
             <!-- редагувати цю карточку - кінець -->
         </div>
    </div>
+</main>
+        
 
 
     <script src="/script.js"></script>
