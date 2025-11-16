@@ -209,7 +209,7 @@ li{
         width: 917px;
         height: 309px;
         display: flex;
-
+        align-items: center;
         &-left {
             margin-top: 45px;
 
@@ -278,13 +278,78 @@ li{
         justify-content: center;
     }
 
-    &-container {
+    &-container{
+        padding-top: 400px;
+        padding-bottom: 400px;
+        background: url(/img/about-bg.png) no-repeat center/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+        ;
         &-play {
             background: #30373f;
             width: 93px;
             height: 33px;
             border-radius: 6px;
         }
-
+        &-title{
+            font-size: 50px;
+        }
     }
+}
+.explore{
+    &-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-title{
+            font-size: 18px;
+            margin-top: 42px;
+            margin-bottom: 10px;
+        }
+        &-switch{
+            display: flex;
+            &-title{
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 14px;
+                
+            }
+            &-box{
+                width: 54px;
+                height: 26px;
+                background-color: #30373F;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                &-circle{
+                    border-radius: 100%;
+                    width: 18px;
+                    height: 18px;
+                    background-color: #8856d9;
+                    margin-left: 4px;
+                }
+            }
+        }
+        &-container{
+
+            &-settings{
+                &-item{
+                    font-size: 15px;
+                    color: #8856D9;
+
+                }
+            }
+    
+        }
+    }
+}
+.PC{
+    color: #fff;
 }

@@ -195,6 +195,7 @@ li {
   width: 917px;
   height: 309px;
   display: flex;
+  align-items: center;
 }
 .DualSense-container-left {
   margin-top: 45px;
@@ -246,9 +247,68 @@ li {
   margin-bottom: 29px;
   justify-content: center;
 }
+.about-container {
+  padding-top: 400px;
+  padding-bottom: 400px;
+  background: url(/img/about-bg.png) no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .about-container-play {
   background: #30373f;
   width: 93px;
   height: 33px;
   border-radius: 6px;
+}
+.about-container-title {
+  font-size: 50px;
+}
+
+.explore-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.explore-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.explore-card-title {
+  font-size: 18px;
+  margin-top: 42px;
+  margin-bottom: 10px;
+}
+.explore-card-switch {
+  display: flex;
+}
+.explore-card-switch-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+}
+.explore-card-switch-box {
+  width: 54px;
+  height: 26px;
+  background-color: #30373F;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+.explore-card-switch-box-circle {
+  border-radius: 100%;
+  width: 18px;
+  height: 18px;
+  background-color: #8856d9;
+  margin-left: 4px;
+}
+.explore-card-container-settings-item {
+  font-size: 15px;
+  color: #8856D9;
+}
+
+.PC {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
