@@ -1,7 +1,9 @@
 @import './reset';
-li{
+
+li {
     list-style: none;
 }
+
 :root {
     --font-family: "Rubik", sans-serif;
     --second-family: "Inter", sans-serif;
@@ -37,6 +39,7 @@ li{
             width: 25px;
             height: 16px;
             cursor: pointer;
+
             &-line {
                 width: 25px;
                 height: 2px;
@@ -50,10 +53,12 @@ li{
             transform: translateX(-200%);
             opacity: 0;
             transition: all .3s;
-            &.show{
+
+            &.show {
                 transform: translateX(0);
                 opacity: 1;
             }
+
             &-iten {
                 margin-left: 30px;
                 font-family: var(--font-family);
@@ -73,7 +78,8 @@ li{
 
 .header {
     position: relative;
-    &-wrapper{
+
+    &-wrapper {
         position: absolute;
         top: 43px;
     }
@@ -86,6 +92,7 @@ li{
     background-repeat: no-repeat;
     background-position: top right;
     background-size: contain;
+
     &-title {
         margin-left: 274px;
         font-family: var(--font-family);
@@ -142,12 +149,16 @@ li{
             border-radius: 6px;
             width: 350px;
             height: 458px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
 
             &-poster {
                 border-radius: 6px;
                 width: 316px;
                 height: 172px;
-                margin: 17px;
+                width: 100%;
+                margin-bottom: 10px;
             }
 
             &-title {
@@ -166,6 +177,8 @@ li{
                 font-size: 16px;
                 color: #a9c7c7;
                 margin-bottom: 32px;
+                justify-content: center;
+                display: flex;
             }
 
             &-settings {
@@ -181,15 +194,18 @@ li{
                 font-weight: 700;
                 font-size: 19px;
                 color: #fff;
+                justify-content: flex-end;
+                display: flex;
             }
 
             &-buy {
                 border-radius: 6px;
-                width: 96px;
-                height: 29px;
+
                 font-size: 13px;
-                justify-content: end;
                 display: flex;
+                align-self: flex-end;
+                text-align: center;
+                padding: 8px 20px;
             }
         }
     }
@@ -210,6 +226,7 @@ li{
         height: 309px;
         display: flex;
         align-items: center;
+
         &-left {
             margin-top: 45px;
 
@@ -278,57 +295,73 @@ li{
         justify-content: center;
     }
 
-    &-container{
+    &-container {
         padding-top: 400px;
         padding-bottom: 400px;
         background: url(/img/about-bg.png) no-repeat center/cover;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center
-        ;
+        align-items: center;
+
         &-play {
             background: #30373f;
             width: 93px;
             height: 33px;
             border-radius: 6px;
         }
-        &-title{
+
+        &-title {
             font-size: 50px;
         }
     }
 }
-.explore{
-    &-wrapper{
+
+.explore {
+    &-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    &-card{
+
+    &-card {
         display: flex;
         flex-direction: column;
         align-items: center;
-        &-title{
+
+        &-price {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        &-title {
             font-size: 18px;
             margin-top: 42px;
             margin-bottom: 10px;
         }
-        &-switch{
+
+        &-switch {
             display: flex;
-            &-title{
+            align-items: center;
+
+            &-title {
                 font-family: var(--font-family);
                 font-weight: 400;
                 font-size: 14px;
-                
+
             }
-            &-box{
+
+            &-box {
                 width: 54px;
                 height: 26px;
                 background-color: #30373F;
                 border-radius: 12px;
                 display: flex;
                 align-items: center;
-                &-circle{
+
+                &-circle {
                     border-radius: 100%;
                     width: 18px;
                     height: 18px;
@@ -337,19 +370,80 @@ li{
                 }
             }
         }
-        &-container{
 
-            &-settings{
-                &-item{
+        &-container {
+            display: flex;
+
+            &-poster {
+                position: relative;
+                bottom: 100px;
+                left: 50px;
+            }
+
+            &-settings {
+                margin-top: 57px;
+
+                &-item {
                     font-size: 15px;
                     color: #8856D9;
+                    margin-bottom: 15px;
+                    font-weight: 400;
+                }
 
+                &-buy {
+                    padding: 7px 18px;
+                    border-radius: 6px;
+                    background-color: #ff4136;
                 }
             }
-    
+
         }
     }
 }
-.PC{
+
+.PC {
     color: #fff;
+}
+
+.PS {
+    color: #fff;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-card {
+        &-item {
+            &-visible {
+                font-family: var(--font-family);
+                font-weight: 600;
+                font-size: 17px;
+                text-align: center;
+                color: #fff;
+                display: flex;
+                justify-content: flex-start;
+                margin-top: 36px;
+                margin-bottom: 13px;
+            }
+            &-hr{
+                background-color: #8856D9;
+                width: 903px;
+                height: 2px;
+                display: flex;
+                align-self: center;
+            }
+            &-unvisible{
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 14px;
+                color: #fff;
+                display: ;
+            }
+        }
+    }
+}
+
+.data {
+    color: #ff4136;
 }

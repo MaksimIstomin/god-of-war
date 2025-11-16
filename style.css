@@ -139,12 +139,16 @@ li {
   border-radius: 6px;
   width: 350px;
   height: 458px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .editions-card-item-poster {
   border-radius: 6px;
   width: 316px;
   height: 172px;
-  margin: 17px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 .editions-card-item-title {
   font-family: var(--font-family);
@@ -161,6 +165,8 @@ li {
   font-size: 16px;
   color: #a9c7c7;
   margin-bottom: 32px;
+  justify-content: center;
+  display: flex;
 }
 .editions-card-item-settings {
   font-family: var(--font-family);
@@ -174,14 +180,16 @@ li {
   font-weight: 700;
   font-size: 19px;
   color: #fff;
+  justify-content: flex-end;
+  display: flex;
 }
 .editions-card-item-buy {
   border-radius: 6px;
-  width: 96px;
-  height: 29px;
   font-size: 13px;
-  justify-content: end;
   display: flex;
+  align-self: flex-end;
+  text-align: center;
+  padding: 8px 20px;
 }
 
 .DualSense-wrapper {
@@ -276,6 +284,12 @@ li {
   flex-direction: column;
   align-items: center;
 }
+.explore-card-price {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
 .explore-card-title {
   font-size: 18px;
   margin-top: 42px;
@@ -283,6 +297,7 @@ li {
 }
 .explore-card-switch {
   display: flex;
+  align-items: center;
 }
 .explore-card-switch-title {
   font-family: var(--font-family);
@@ -304,11 +319,60 @@ li {
   background-color: #8856d9;
   margin-left: 4px;
 }
+.explore-card-container {
+  display: flex;
+}
+.explore-card-container-poster {
+  position: relative;
+  bottom: 100px;
+  left: 50px;
+}
+.explore-card-container-settings {
+  margin-top: 57px;
+}
 .explore-card-container-settings-item {
   font-size: 15px;
   color: #8856D9;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+.explore-card-container-settings-buy {
+  padding: 7px 18px;
+  border-radius: 6px;
+  background-color: #ff4136;
 }
 
 .PC {
   color: #fff;
+}
+
+.PS {
+  color: #fff;
+}
+
+.faq-card-item-visible {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 17px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+}
+.faq-card-item-hr {
+  background-color: #8856D9;
+  width: 903px;
+  height: 2px;
+  display: flex;
+  align-self: center;
+}
+.faq-card-item-unvisible {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+
+.data {
+  color: #ff4136;
 }/*# sourceMappingURL=style.css.map */
