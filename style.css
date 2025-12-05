@@ -350,6 +350,19 @@ li {
   color: #fff;
 }
 
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.faq-title {
+  text-align: center;
+}
+.faq-card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .faq-card-item-visible {
   font-family: var(--font-family);
   font-weight: 600;
@@ -358,6 +371,10 @@ li {
   color: #fff;
   display: flex;
   justify-content: flex-start;
+  margin-top: 36px;
+  margin-bottom: 13px;
+  align-self: center;
+  display: flex;
 }
 .faq-card-item-hr {
   background-color: #8856D9;
@@ -371,6 +388,45 @@ li {
   font-weight: 400;
   font-size: 14px;
   color: #fff;
+  display: flex;
+  align-self: center;
+}
+.faq-text {
+  display: flex;
+  margin-left: 500px;
+  margin-top: 156px;
+}
+.faq-text-item {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 169%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 22px;
+}
+.faq-text-language {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 193%;
+  text-transform: uppercase;
+  color: #8c96a0;
+  margin-left: 233px;
+}
+.faq-info {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  align-self: center;
+  color: #8c96a0;
+  width: 904px;
+  margin-top: 50px;
+}
+.faq-logo {
+  width: 46px;
+  height: 35px;
+  align-self: center;
 }
 
 .data {

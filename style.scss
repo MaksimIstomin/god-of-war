@@ -413,8 +413,18 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    &-title {
+        text-align: center;
+    }
+
     &-card {
+
         &-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
             &-visible {
                 font-family: var(--font-family);
                 font-weight: 600;
@@ -425,22 +435,68 @@ li {
                 justify-content: flex-start;
                 margin-top: 36px;
                 margin-bottom: 13px;
+                align-self: center;
+                display: flex;
             }
-            &-hr{
+
+            &-hr {
                 background-color: #8856D9;
                 width: 903px;
                 height: 2px;
                 display: flex;
                 align-self: center;
             }
-            &-unvisible{
+
+            &-unvisible {
                 font-family: var(--font-family);
                 font-weight: 400;
                 font-size: 14px;
                 color: #fff;
-                display: ;
+                display: flex;
+                align-self: center;
             }
         }
+    }
+
+    &-text {
+        display: flex;
+        margin-left: 500px;
+        margin-top: 156px;
+
+        &-item {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 169%;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.5);
+            margin-left: 22px;
+        }
+
+        &-language {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 193%;
+            text-transform: uppercase;
+            color: #8c96a0;
+            margin-left: 233px;
+        }
+    }
+
+    &-info {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        align-self: center;
+        color: #8c96a0;
+        width: 904px;
+        margin-top: 50px;
+    }
+    &-logo{
+        width: 46px;
+        height: 35px;
+        align-self: center;
     }
 }
 
