@@ -1,5 +1,31 @@
 @import './reset';
-
+// modal start
+.overlay{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.503);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+.modal{
+    width: 490px;
+    background-color: black;
+    color: white;
+    position: relative;
+    &-close{
+        font-size: 36px;
+        position: absolute;
+        cursor: pointer;
+        right: 10px;
+        top: 10px;
+    }
+}
+// modal end
 li {
     list-style: none;
 }
