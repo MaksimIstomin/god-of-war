@@ -440,7 +440,60 @@ li {
     flex-direction: column;
     justify-content: center;
     &-title{
-
+        text-align: center;
+        color: #fff;
+        margin-bottom: 31px;
+    }
+    &-wrapper{
+        max-width: 100%!important;
+        &-box{
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+            
+            &-card{
+                width: 620px;
+                padding: 20px;
+                background: linear-gradient(180deg, #30373f 22.4%, #141615 100%);
+                color: #fff;
+                &-title{
+                    margin: 7px 0 15px 0;
+                    text-transform: uppercase;
+                }
+                &-container{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    column-gap: 24px;
+                    &-data{
+                        height: 248px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        &-read{
+                            align-self: flex-end;
+                            margin-top: 9px;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            font-size: 13px;
+                            padding: 7px 31px;
+                            border-radius: 6px;
+                            background: #8C96A0;
+                            cursor: pointer;
+                            border: none;
+                            color: white;
+                        }
+                    }
+                    &-title{
+                        color:#8856D9;
+;
+                    }
+                    &-date{
+                        color: #8C96A0;
+                    }
+                }
+            }
+        }
     }
 }
 .faq {
