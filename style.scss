@@ -49,6 +49,7 @@ li {
     font-weight: 600;
     font-size: 40px;
     color: #fff;
+    
 }
 
 .page-wrapper {
@@ -434,7 +435,14 @@ li {
 .PS {
     color: #fff;
 }
+.news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-title{
 
+    }
+}
 .faq {
     display: flex;
     flex-direction: column;
