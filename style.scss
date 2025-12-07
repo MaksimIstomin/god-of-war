@@ -1,6 +1,7 @@
 @import './reset';
+
 // modal start
-.overlay{
+.overlay {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -10,14 +11,16 @@
     display: none;
     justify-content: center;
     align-items: center;
-    
+
 }
-.modal{
+
+.modal {
     width: 490px;
     background-color: black;
     color: white;
     position: relative;
-    &-close{
+
+    &-close {
         font-size: 36px;
         position: absolute;
         cursor: pointer;
@@ -25,6 +28,7 @@
         top: 10px;
     }
 }
+
 // modal end
 li {
     list-style: none;
@@ -49,7 +53,7 @@ li {
     font-weight: 600;
     font-size: 40px;
     color: #fff;
-    
+
 }
 
 .page-wrapper {
@@ -435,42 +439,50 @@ li {
 .PS {
     color: #fff;
 }
-.news{
+
+.news {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    &-title{
+
+    &-title {
         text-align: center;
         color: #fff;
         margin-bottom: 31px;
     }
-    &-wrapper{
-        max-width: 100%!important;
-        &-box{
+
+    &-wrapper {
+        max-width: 100% !important;
+
+        &-box {
             display: flex;
             align-items: center;
             column-gap: 20px;
-            
-            &-card{
+
+            &-card {
                 width: 620px;
                 padding: 20px;
                 background: linear-gradient(180deg, #30373f 22.4%, #141615 100%);
                 color: #fff;
-                &-title{
+
+                &-title {
                     margin: 7px 0 15px 0;
                     text-transform: uppercase;
                 }
-                &-container{
+
+                &-container {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     column-gap: 24px;
-                    &-data{
+
+                    &-data {
                         height: 248px;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-                        &-read{
+
+                        &-read {
                             align-self: flex-end;
                             margin-top: 9px;
                             font-weight: 500;
@@ -484,11 +496,13 @@ li {
                             color: white;
                         }
                     }
-                    &-title{
-                        color:#8856D9;
-;
+
+                    &-title {
+                        color: #8856D9;
+                        ;
                     }
-                    &-date{
+
+                    &-date {
                         color: #8C96A0;
                     }
                 }
@@ -496,35 +510,68 @@ li {
         }
     }
 }
+
 .faq {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     &-title {
         text-align: center;
     }
 
     &-card {
+        width: 903px;
+        height: 237px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         &-item {
             display: flex;
             flex-direction: column;
             justify-content: center;
 
-            &-visible {
-                font-family: var(--font-family);
-                font-weight: 600;
-                font-size: 17px;
-                text-align: center;
-                color: #fff;
+            &-top {
                 display: flex;
-                justify-content: flex-start;
-                margin-top: 36px;
-                margin-bottom: 13px;
-                align-self: center;
-                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &-visible {
+                    font-family: var(--font-family);
+                    font-weight: 600;
+                    font-size: 17px;
+                    text-align: center;
+                    color: #fff;
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-top: 36px;
+                    margin-bottom: 13px;
+                    align-self: center;
+                    display: flex;
+                }
+
+                &-x {
+                    border-radius: 6px;
+                    width: 30px;
+                    height: 30px;
+                    background: #8c96a0;
+                    cursor: pointer;
+                    &-x {
+                        font-family: var(--font-family);
+                        font-weight: 600;
+                        font-size: 20px;
+                        text-align: center;
+                        color: #fff;
+                        transform: rotate(45deg);
+                    }
+                }
             }
+
 
             &-hr {
                 background-color: #8856D9;
@@ -532,6 +579,7 @@ li {
                 height: 2px;
                 display: flex;
                 align-self: center;
+                margin-bottom: 13px;
             }
 
             &-unvisible {
@@ -539,7 +587,7 @@ li {
                 font-weight: 400;
                 font-size: 14px;
                 color: #fff;
-                display: flex;
+                width: 100%;
                 align-self: center;
             }
         }
@@ -580,7 +628,8 @@ li {
         width: 904px;
         margin-top: 50px;
     }
-    &-logo{
+
+    &-logo {
         width: 46px;
         height: 35px;
         align-self: center;

@@ -442,16 +442,32 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .faq-title {
   text-align: center;
+}
+.faq-card {
+  width: 903px;
+  height: 237px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .faq-card-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.faq-card-item-visible {
+.faq-card-item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-card-item-top-visible {
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 17px;
@@ -464,19 +480,35 @@ li {
   align-self: center;
   display: flex;
 }
+.faq-card-item-top-x {
+  border-radius: 6px;
+  width: 30px;
+  height: 30px;
+  background: #8c96a0;
+  cursor: pointer;
+}
+.faq-card-item-top-x-x {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  transform: rotate(45deg);
+}
 .faq-card-item-hr {
   background-color: #8856D9;
   width: 903px;
   height: 2px;
   display: flex;
   align-self: center;
+  margin-bottom: 13px;
 }
 .faq-card-item-unvisible {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
   color: #fff;
-  display: flex;
+  width: 100%;
   align-self: center;
 }
 .faq-text {
