@@ -11,16 +11,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
+    z-index: 100;
+}   
 
 .modal {
     width: 490px;
-    background-color: #30373F;
+    background: url(/img/modal-bg.png) no-repeat center/cover,#30373F;
     color: white;
     position: relative;
     padding: 31px;
-
+    &-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-btn{
+            align-self: center;
+        }
+        &-container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &-box{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+    }
+    .unique{
+        &-input{
+            width: 190px;
+        }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
     &-close {
         font-size: 36px;
         position: absolute;
