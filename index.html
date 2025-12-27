@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Rubik:wght@300..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
@@ -50,8 +50,8 @@
                         to accept these terms, do not download this product. See Terms of Service for more important
                         information.
                     </p>
-                    <div class="modal-form-box">
-                        <p class="modal-form-box-desc">YOUR TOTAL SUMMA:</p>
+                    <div class="modal-form-box modal-form-box1">
+                        <p class="modal-form-box-descr">YOUR TOTAL SUMMA:</p>
                         <p class="modal-form-box-price">19.99$</p>
                     </div>
                     <button class="modal-form-btn">buy NOW</button>
@@ -63,18 +63,21 @@
                 <nav class="nav">
                     <div class="nav-left">
 
+
+
+
                         <div class="nav-left-burger">
                             <div class="nav-left-burger-line"></div>
                             <div class="nav-left-burger-line"></div>
                             <div class="nav-left-burger-line"></div>
                         </div>
                         <ul class="nav-left-list">
-                            <li class="nav-left-list-iten nav-left-list-iten-pur">editions</li>
-                            <li class="nav-left-list-iten">controller</li>
-                            <li class="nav-left-list-iten">ABOUT GAME</li>
-                            <li class="nav-left-list-iten">Explore</li>
-                            <li class="nav-left-list-iten">news</li>
-                            <li class="nav-left-list-iten">FAQ</li>
+                            <a href="#buy"><li class="nav-left-list-iten nav-left-list-iten-pur">editions</li></a>
+                            <a href="#con"><li class="nav-left-list-iten">controller</li></a>
+                            <a href="#ab"><li class="nav-left-list-iten">ABOUT GAME</li></a>
+                            <a href="#ex"><li class="nav-left-list-iten">Explore</li></a>
+                            <a href="#n"><li class="nav-left-list-iten">news</li></a>
+                            <a href="#faq"><li class="nav-left-list-iten">FAQ</li></a>
                         </ul>
                     </div>
 
@@ -89,11 +92,11 @@
                 <p class="hero-desc">Taking place three years following the events of the previous game, Fimbulwinter, a
                     great winter that spans three summers, is drawing to a close which will begin the prophesied
                     Ragnarök.</p>
-                <button class="hero-buy main-button">buy NOW</button>
+                <a href="#buy"><button class="hero-buy main-button">buy NOW</button></a>
             </section>
             <div class="editions-wrapper">
                 <h3 class="editions-title main-title">Editions</h3>
-                <div class="editions-card">
+                <div class="editions-card" id="buy">
                     <div class="editions-card-item">
                         <img src="/img/stan-edit.png" alt="" class="editions-card-item-poster">
                         <h5 class="editions-card-item-title">Standard Edition</h5>
@@ -127,8 +130,11 @@
                 </div>
             </div>
 
+
+
+
             <div class="DualSense-wrapper">
-                <h3 class="DualSense-title main-title">DualSense</h3>
+                <h3 class="DualSense-title main-title" id="con">DualSense</h3>
                 <div class="DualSense-container">
                     <div class="DualSense-container-left">
                         <p class="DualSense-container-left-desc">You can also buy an exclusive controller with the <span
@@ -149,7 +155,7 @@
             </div>
             <!-- hhhhh -->
             <div class="about-wrapper">
-                <h3 class="about-title main-title">About Game</h3>
+                <h3 class="about-title main-title" id="ab">About Game</h3>
                 <div class="about-container">
                     <h2 class="about-container-title main-title">Watch the Trailer</h2>
                     <button class="about-container-play main-button">play</button>
@@ -157,7 +163,7 @@
             </div>
             <!-- hhhhh -->
             <div class="explore-wrapper">
-                <h3 class="explore-title main-title">Explore the God of War series</h3>
+                <h3 class="explore-title main-title" id="ex">Explore the God of War series</h3>
                 <div class="explore-card">
                     <h4 class="explore-card-title main-title">Here are the God of War (PC) System Requirements</h4>
                     <div class="explore-card-switch">
@@ -171,22 +177,33 @@
                     <div class="explore-card-container">
                         <img src="/img/image 3.png" alt="" class="explore-card-container-poster">
                         <ul class="explore-card-container-settings">
-                            <li class="explore-card-container-settings-item main-title">CPU: <span class="PC">Intel
-                                    i5-2500k (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)</span></li>
-                            <li class="explore-card-container-settings-item main-title">RAM: <span class="PC">8
-                                    GB</span></li>
-                            <li class="explore-card-container-settings-item main-title">OS: <span class="PC">Windows 10
-                                    64-bit</span></li>
+                            <li class="explore-card-container-settings-item main-title">CPU: <span class="flex PC">Intel
+                                    i5-2500k (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)</span><span
+                                    class="hidden PSn">AMD Ryzen 9 9950X3D</span></li>
+                            <li class="explore-card-container-settings-item main-title">RAM: <span class="flex PC">8
+                                    GB</span><span
+                                    class="hidden PSn">32GB</span></li>
+                            <li class="explore-card-container-settings-item main-title">OS: <span class="flex PC">Windows 10
+                                    64-bit</span><span
+                                    class="hidden PSn">windows 11 </span></li>
                             <li class="explore-card-container-settings-item main-title">VIDEOCARD: <span
-                                    class="PC">NVIDIA GTX 960 (4 GB) or AMD R9 290X (4 GB)</span></li>
+                                    class="flex PC">NVIDIA GTX 960 (4 GB) or AMD R9 290X (4 GB)</span><span
+                                    class="hidden PSn">NVIDIA RTX5090 or Radeon RX 7900 XTX</span></li>
                             <li class="explore-card-container-settings-item main-title">PIXEL SHADER: <span
-                                    class="PC">5.1</span></li>
+                                    class="flex PC">5.1</span><span
+                                    class="hidden PSn">5.1</span></li>
                             <li class="explore-card-container-settings-item main-title">VERTEX SHADER: <span
-                                    class="PC">5.1</span></li>
+                                    class="flex PC">5.1</span><span
+                                    class="hidden PSn">5.1</span></li>
                             <li class="explore-card-container-settings-item main-title">FREE DISK SPACE: <span
-                                    class="PC">70 GB</span></li>
+                                    class="flex PC">70 GB</span><span
+                                    class="hidden PSn">150GB</span></li>
+
+
+
                             <li class="explore-card-container-settings-item main-title">DEDICATED VIDEO RAM: <span
-                                    class="PC">4 GB</span></li>
+                                    class="PC">4 GB</span><span
+                                    class="hidden PSn">16GB</span></li>
                             <button class="explore-card-container-settings-buy main-button">BUY NOW</button>
                         </ul>
                     </div>
@@ -206,17 +223,20 @@
 
                         <ul class="explore-card-container-settings">
                             <li class="explore-card-container-settings-item main-title">Platform: <span
-                                    class="PS">PS4</span></li>
+                                    class="flex PS">PS4</span><span class="hidden PCn">PS5</span></li>
                             <li class="explore-card-container-settings-item main-title">Premiere: <span
-                                    class="PS">20.4.2018</span></li>
-                            <li class="explore-card-container-settings-item main-title">Publisher: <span class="PS">Sony
+                                    class="flex PS">20.4.2018</span><span class="hidden PCn">16.4.2018</span></li>
+                            <li class="explore-card-container-settings-item main-title">Publisher: <span class="flex PS">Sony
+                                    Interactive Entertainment Europe</spnan><span class="hidden PCn">Sony
                                     Interactive Entertainment Europe</span></li>
                             <li class="explore-card-container-settings-item main-title">Species: <span
-                                    class="PS">Action, Adventure</span></li>
-                            <li class="explore-card-container-settings-item main-title">Voice: <span class="PS">English,
-                                    Polish, Russian</span></li>
+                                    class="flex PS">Action, Adventure</span><nspan class="hidden PCn">Intel
+                                    i5-2500k (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)</span></li>
+                            <li class="explore-card-container-settings-item main-title">Voice: <span class="flex PS">English,
+                                    Polish, Russian</span><span class="hidden PCn">English,
+                                    Polish, Russian, Ukrainian, Germanian, Chinese, Spanish</span></li>
                             <li class="explore-card-container-settings-item main-title">Display languages: <span
-                                    class="PS">English, Dutch, Polish, Russian,</span></li>
+                                    class="flex PS">English, Dutch, Polish, Rnussian, </span><span class="hidden PCn">English, Dutch, Polish, Rnussian, Ukrainian, Germanian, Chinese, Spanish</span></li>
                             <button class="explore-card-container-settings-buy main-button">BUY NOW</button>
                         </ul>
                         <img src="/img/for-ps.png" alt="" class="explore-card-container-poster">
@@ -225,7 +245,9 @@
                 <!-- редагувати цю карточку - кінець -->
             </div>
             <section class="news">
-                <h2 class="news-title main-title">News
+                <h2 class="news-title main-title" id="n">News
+
+
 
                 </h2>
                 <div class="swiper news-wrapper">
@@ -322,17 +344,17 @@
 
             </section>
             <div class="faq">
-                <h2 class="faq-title main-title">FAQ</h2>
+                <h2 class="faq-title main-title" id="faq">FAQ</h2>
                 <ul class="faq-card">
                     <li class="faq-card-item">
                         <div class="faq-card-item-top">
                             <div class="faq-card-item-top-visible">When is the next God of War coming out?</div>
                             <div class="faq-card-item-top-x">
-                                <p class="faq-card-item-top-x-x">+</p>
+                                <p class="faq-card-item-top-x-x c-f-1">+</p>
                             </div>
                         </div>
                         <hr class="faq-card-item-hr">
-                        <div class="faq-card-item-unvisible">God of War Ragnarök will release on <span class="data">
+                        <div class="faq-card-item-unvisible unv-1">God of War Ragnarök will release on <span class="data">
                                 November 9, 2022</span> . To get the latest updates on release timing, make sure you
                             follow Santa Monica Studio on Twitter, Instagram and Facebook! </div>
                     </li>
@@ -340,11 +362,11 @@
                         <div class="faq-card-item-top">
                             <div class="faq-card-item-top-visible">Will God of War Ragnarök have an upgrade path?</div>
                             <div class="faq-card-item-top-x">
-                                <p class="faq-card-item-top-x-x">+</p>
+                                <p class="faq-card-item-top-x-x c-f-2">+</p>
                             </div>
                         </div>
                         <hr class="faq-card-item-hr">
-                        <div class="faq-card-item-unvisible">God of War Ragnarök will release on <span class="data">
+                        <div class="faq-card-item-unvisible unv-2">God of War Ragnarök will release on <span class="data">
                                 November 9, 2022</span> . To get the latest updates on release timing, make sure you
                             follow Santa Monica Studio on Twitter, Instagram and Facebook! </div>
                     </li>
@@ -375,5 +397,4 @@
     <script src="/script.js"></script>
 
 </body>
-
 </html>

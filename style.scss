@@ -8,45 +8,131 @@
     top: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.503);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 100;
-}   
+}
+
+.red {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #ff4136;
+}
 
 .modal {
-    width: 490px;
-    background: url(/img/modal-bg.png) no-repeat center/cover,#30373F;
+    width: 420px;
+    height: 565px;
+    background: url(/img/modal.png) no-repeat center 100% / cover, #30373F;
+
     color: white;
     position: relative;
     padding: 31px;
-    &-form{
+    border-radius: 12px;
+
+    &-close {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        color: #d9d9d9;
+    }
+
+    &-form {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        &-btn{
+
+        &-btn {
             align-self: center;
         }
-        &-container{
+
+        &-container {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
         }
-        &-box{
+
+        &-box1 {
+            display: flex;
+        }
+
+        &-box {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             width: 100%;
+
+            &-input {
+                border-radius: 6px;
+                width: 406px;
+                height: 44px;
+                background: #30373f;
+            }
+
+            &-desc {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 10px;
+                color: #d9d9d9;
+            }
+
+            &-descr {
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 14px;
+                text-align: center;
+                color: #fff;
+            }
+
+            &-price {
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 20px;
+                text-align: center;
+                color: #fff;
+            }
+        }
+
+        &-agree {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 10px;
+            text-transform: uppercase;
+            color: #fff;
+
+            &-check {
+                border-radius: 6px;
+                width: 25px;
+                height: 24px;
+                background: #30373f;
+            }
+        }
+
+        &-btn {
+            border-radius: 6px;
+            width: 406px;
+            background: #8856d9;
+            height: 39px;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #fff;
         }
     }
-    .unique{
-        &-input{
+
+    .unique {
+        &-input {
             width: 190px;
         }
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
+
     &-close {
         font-size: 36px;
         position: absolute;
@@ -193,6 +279,8 @@ li {
     background-repeat: no-repeat;
     background-position: top right;
     background-size: contain;
+
+
 
     &-title {
         margin-left: 274px;
@@ -364,6 +452,8 @@ li {
 
                 }
 
+
+
                 &-btn {
                     border-radius: 6px;
                     width: 274px;
@@ -467,7 +557,7 @@ li {
                 border-radius: 12px;
                 display: flex;
                 align-items: center;
-
+                z-index: 10;
                 &-circle {
                     border-radius: 100%;
                     width: 18px;
@@ -551,6 +641,7 @@ li {
                     justify-content: space-between;
                     align-items: center;
                     column-gap: 24px;
+
 
                     &-data {
                         height: 248px;
@@ -696,6 +787,8 @@ li {
         }
     }
 
+
+
     &-info {
         font-family: var(--font-family);
         font-weight: 400;
@@ -715,4 +808,18 @@ li {
 
 .data {
     color: #ff4136;
+}
+.PSn{
+    color: #fff;
+    
+}
+.PCn{
+    color: #fff;
+    
+}
+.hidden {
+    display: none !important;
+}
+.flex {
+    display: flex;
 }

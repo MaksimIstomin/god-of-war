@@ -14,17 +14,115 @@ li {
   top: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.503);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
+  z-index: 100;
+}
+
+.red {
+  font-weight: 700;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #ff4136;
 }
 
 .modal {
-  width: 490px;
-  background-color: #30373F;
+  width: 420px;
+  height: 565px;
+  background: url(/img/modal.png) no-repeat center 100%/cover, #30373F;
   color: white;
   position: relative;
   padding: 31px;
+  border-radius: 12px;
+}
+.modal-close {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #d9d9d9;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.modal-form-btn {
+  align-self: center;
+}
+.modal-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.modal-form-box1 {
+  display: flex;
+}
+.modal-form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.modal-form-box-input {
+  border-radius: 6px;
+  width: 406px;
+  height: 44px;
+  background: #30373f;
+}
+.modal-form-box-desc {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 10px;
+  color: #d9d9d9;
+}
+.modal-form-box-descr {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+}
+.modal-form-box-price {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+.modal-form-agree {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.modal-form-agree-check {
+  border-radius: 6px;
+  width: 25px;
+  height: 24px;
+  background: #30373f;
+}
+.modal-form-btn {
+  border-radius: 6px;
+  width: 406px;
+  background: #8856d9;
+  height: 39px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.modal .unique {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.modal .unique-input {
+  width: 190px;
 }
 .modal-close {
   font-size: 36px;
@@ -378,6 +476,7 @@ li {
   border-radius: 12px;
   display: flex;
   align-items: center;
+  z-index: 10;
 }
 .explore-card-switch-box-circle {
   border-radius: 100%;
@@ -592,4 +691,20 @@ li {
 
 .data {
   color: #ff4136;
+}
+
+.PSn {
+  color: #fff;
+}
+
+.PCn {
+  color: #fff;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.flex {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
